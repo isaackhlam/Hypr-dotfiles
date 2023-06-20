@@ -1,0 +1,56 @@
+import:
+  - ./dracula.yml
+env:
+  TERM: xterm-256color
+# Set the window Width and Height in console columns.
+# The window size will change if the font size changes.
+window:
+  dimensions:
+    columns: 110
+    lines: 30
+  decorations: full
+  startup_mode: Windowed
+  title: "Alacritty Terminal"
+  dynamic_title: true
+  opacity: 0.8
+# Scrolling history and multiplier
+scrolling:
+  history: 100000
+  multiplier: 3
+# Font family and style
+font:
+  normal:
+    family: "MesloLGS NF"
+    style: Regular
+  bold:
+    family: "MesloLGS NF"
+    style: Bold
+  italic:
+    family: "MesloLGS NF"
+    style: italic
+  bold_italic:
+    family: "MesloLGS NF"
+    style: Bold Italic
+  size: 10.0
+  offset:
+    x: 0
+    y: 0
+  draw_bold_text_with_bright_colors: false
+# Cursor styling
+cursor:
+  style: Beam
+  thickness: 0.2
+  unfocused_hollow: false
+  blink_interval: 750
+
+##### Short Cut ###########
+# Mouse
+mouse_bindings:
+ - { mouse: Right, action: Paste }
+
+# Keyboard
+key_bindings:
+ - { key: C, mods: Control|Shift, action: Copy }
+ - { key: V, mods: Control|Shift, action: Paste }
+ - { key: C, mods: Control, mode: Vi, action: ClearSelection }
+
