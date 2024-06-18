@@ -1,0 +1,3 @@
+[submodule "submodule/dotfiles"]
+	path = submodule/dotfiles
+	url = git@github.com:isaackhlam/dot-config.git
